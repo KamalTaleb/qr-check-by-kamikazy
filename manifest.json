@@ -1,8 +1,9 @@
 {
   "manifest_version": 3,
   "name": "QR Check by Kamikazy",
-  "version": "1.0.0",
-  "description": "Paste a link, get a QR code. Download it as SVG (vector) or PNG.",
+  "version": "1.1.0",
+  "description": "Paste a link, get a QR code. Download it as SVG (vector, for print) or PNG up to 4K. Works offline.",
+  "homepage_url": "https://github.com/KamalTaleb/qr-check-by-kamikazy",
   "action": {
     "default_popup": "popup.html",
     "default_title": "QR Check by Kamikazy",
