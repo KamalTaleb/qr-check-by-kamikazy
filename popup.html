@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QR Check by Kamikazy</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <h1>QR Check</h1>
+    <span class="by">by Kamikazy</span>
+  </header>
+
+  <label for="link">Link</label>
+  <div class="row">
+    <input id="link" type="text" placeholder="https://..." autocomplete="off" spellcheck="false">
+    <button id="usePage" class="ghost" title="Use the page you are on">This page</button>
+  </div>
+
+  <div id="preview" class="preview"><p class="hint">Paste a link above</p></div>
+
+  <details>
+    <summary>Options</summary>
+    <div class="opts">
+      <label>Colour <input id="fg" type="color" value="#000000"></label>
+      <label>Background <input id="bg" type="color" value="#ffffff"></label>
+      <label><input id="transparent" type="checkbox"> No background</label>
+      <label>Error fix
+        <select id="ecc">
+          <option value="L">Low (7%)</option>
+          <option value="M" selected>Medium (15%)</option>
+          <option value="Q">High (25%)</option>
+          <option value="H">Max (30%) - logo on top</option>
+        </select>
+      </label>
+      <label>PNG size
+        <select id="pngSize">
+          <option value="512">512 px</option>
+          <option value="1024" selected>1024 px</option>
+          <option value="2048">2048 px</option>
+          <option value="4096">4096 px</option>
+        </select>
+      </label>
+    </div>
+  </details>
+
+  <div class="actions">
+    <button id="svg" disabled>Download SVG</button>
+    <button id="png" disabled class="secondary">Download PNG</button>
+    <button id="copy" disabled class="secondary">Copy</button>
+  </div>
+  <p id="status" class="status"></p>
+
+  <script src="qrcode.min.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+:root { --ink: #111; --muted: #666; --line: #ddd; --accent: #e5322d; --bg: #fff; --field: #f6f6f6; }
+@media (prefers-color-scheme: dark) {
+  :root { --ink: #eee; --muted: #999; --line: #333; --bg: #1a1a1a; --field: #252525; }
+}
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body { width: 340px; margin: 0; padding: 14px; font: 13px/1.4 "Segoe UI", system-ui, sans-serif; color: var(--ink); background: var(--bg); }
+@media (min-width: 400px) { body { margin: 24px auto; } }
+header { display: flex; align-items: baseline; gap: 6px; margin-bottom: 10px; }
+h1 { margin: 0; font-size: 18px; }
+.by { color: var(--accent); font-weight: 600; }
+label { display: block; font-weight: 600; margin-bottom: 4px; }
+.row { display: flex; gap: 6px; }
+input[type=text] { flex: 1; min-width: 0; padding: 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--field); color: var(--ink); font: inherit; }
+input[type=text]:focus { outline: 2px solid var(--accent); border-color: transparent; }
+button { padding: 8px 10px; border: 0; border-radius: 6px; background: var(--accent); color: #fff; font: inherit; font-weight: 600; cursor: pointer; }
+button:disabled { opacity: .4; cursor: default; }
+button.secondary { background: var(--ink); color: var(--bg); }
+button.ghost { background: transparent; color: var(--ink); border: 1px solid var(--line); white-space: nowrap; }
+.preview { margin: 12px 0; aspect-ratio: 1; border: 1px solid var(--line); border-radius: 8px; display: grid; place-items: center; overflow: hidden;
+  background: repeating-conic-gradient(#0000 0 25%, #8882 0 50%) 0 0 / 16px 16px; }
+.preview svg { width: 100%; height: 100%; display: block; }
+.hint { color: var(--muted); }
+details { margin-bottom: 12px; }
+summary { cursor: pointer; font-weight: 600; }
+.opts { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 8px; }
+.opts label { font-weight: 400; display: flex; flex-direction: column; gap: 2px; }
+.opts label:has(input[type=checkbox]) { flex-direction: row; align-items: center; gap: 6px; }
+.opts select { padding: 4px; background: var(--field); color: var(--ink); border: 1px solid var(--line); border-radius: 4px; }
+.opts input[type=color] { width: 100%; height: 28px; padding: 0; border: 1px solid var(--line); border-radius: 4px; }
+.actions { display: grid; grid-template-columns: 1fr 1fr auto; gap: 6px; }
+.status { min-height: 1.4em; margin: 8px 0 0; color: var(--muted); }
+.status.err { color: var(--accent); }
