@@ -26,6 +26,7 @@ Made by Kamikazy for print and sign work.
 - **Icon:** store/store-icon-128.png (96px art, 16px padding, per Google guidelines)
 - **Screenshots (1280x800):** store/shot1.png, store/shot2.png, store/shot3.png
 - **Small promo tile (440x280):** store/promo-440x280.png
+- **Marquee promo tile (1400x560):** store/marquee-1400x560.png
 - **Homepage URL:** https://github.com/KamalTaleb/qr-check-by-kamikazy
 - **Support URL:** https://github.com/KamalTaleb/qr-check-by-kamikazy/issues
 
