@@ -23,7 +23,7 @@ QR Check turns any link into a QR code in one step, ready for print or screen.
 Made by Kamikazy for print and sign work.
 ```
 
-- **Icon:** icons/128.png
+- **Icon:** store/store-icon-128.png (96px art, 16px padding, per Google guidelines)
 - **Screenshots (1280x800):** store/shot1.png, store/shot2.png, store/shot3.png
 - **Small promo tile (440x280):** store/promo-440x280.png
 - **Homepage URL:** https://github.com/KamalTaleb/qr-check-by-kamikazy
